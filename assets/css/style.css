@@ -1,0 +1,37 @@
+:root {
+    --margin-left: 50px;
+    --margin-right: 20px;
+    --accent-color: rgb(51, 102, 197);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about-me figure img {
+    height: 200px;
+    margin-right: var(--margin-right);
+    border-left-style: solid;
+    border-left-color: var(--accent-color);
+    padding-left: 10px;
+}
+
+.section-title {
+    border-right-color: var(--accent-color);
+    border-right-style: solid;
+    margin-left: var(--margin-left);
+    padding-right: 10px;
+    color: var(--accent-color);
+    font-size: 40px;
+}
+
+.about-me p {
+    margin-right: 20px;
+    margin-left: 20px;
+}
