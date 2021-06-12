@@ -1,5 +1,5 @@
 :root {
-    --margin-left: 50px;
+    --margin-left: 80px;
     --margin-right: 20px;
     --accent-color: rgb(51, 102, 197);
     --secondary-color: rgb(130, 184, 247);
@@ -18,6 +18,11 @@
     font-size: 40px;
 }
 
+.main-picture {
+    width: 100%;
+    height: 150px;
+}
+
 /* Header */
 
 header {
@@ -26,7 +31,6 @@ header {
     background-color: rgb(71, 69, 69);
     flex-wrap: wrap;
     padding: 10px 0px;
-    margin-bottom: 10px;
 }
 
 #first-nav {
@@ -37,6 +41,10 @@ header h1 {
     background-color: var(--accent-color);
     font-size: 50px;
     padding-right: 20px;
+    background-image: linear-gradient(
+        var(--accent-color) 0%,
+        var(--secondary-color) 100%
+    );
 }
 
 .nav-link {
@@ -50,10 +58,11 @@ header h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 20px;
 }
 
 .about-me figure img {
-    height: 200px;
+    height: 300px;
     margin-right: var(--margin-right);
     border-left-style: solid;
     border-left-color: var(--accent-color);
