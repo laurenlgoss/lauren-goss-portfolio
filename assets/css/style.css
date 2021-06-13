@@ -1,8 +1,9 @@
 :root {
     --margin-left: 80px;
     --margin-right: 20px;
-    --accent-color: rgb(51, 102, 197);
+    --accent-color: rgb(39, 70, 126);
     --secondary-color: rgb(130, 184, 247);
+    --header-footer: rgb(71, 69, 69);
 }
 
 * {
@@ -28,12 +29,12 @@
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: rgb(71, 69, 69);
+    background-color: var(--header-footer);
     flex-wrap: wrap;
     padding: 10px 0px;
 }
 
-#first-nav {
+#push-left {
     margin-left: auto;
 }
 
@@ -72,4 +73,27 @@ header h1 {
 .about-me p {
     margin-right: 20px;
     margin-left: 20px;
+}
+
+/* Projects */
+
+
+
+/* Contact Me */
+
+.contact-me {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact {
+    font-size: 20px;
+    color: var(--secondary-color);
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+footer h1 {
+    padding-bottom: 50px;
+    margin-bottom: 10px;
 }
