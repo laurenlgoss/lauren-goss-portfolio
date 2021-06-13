@@ -80,8 +80,10 @@ header h1 {
     padding-left: 10px;
 }
 
-#about-me p {
+#about-me ul {
     margin-right: 20px;
+    color: var(--accent-color);
+    list-style: none;
 }
 
 /* Projects */
