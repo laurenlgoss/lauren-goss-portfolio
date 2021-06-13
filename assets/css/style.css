@@ -17,6 +17,7 @@
     padding-right: 10px;
     color: var(--accent-color);
     font-size: 40px;
+    margin-right: var(--margin-right);
 }
 
 .main-picture {
@@ -72,18 +73,43 @@ header h1 {
 
 .about-me p {
     margin-right: 20px;
-    margin-left: 20px;
 }
 
 /* Projects */
 
+.projects h1 {
+    float: left;
+}
 
+.projects div a img {
+    height: 500px;
+    width: 1150px;
+}
+
+.projects div {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects div div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.projects div div figure img {
+    margin: 0px 50px 0px 0px;
+    width: 500px;
+    height: 300px;
+}
 
 /* Contact Me */
 
 .contact-me {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .contact {
