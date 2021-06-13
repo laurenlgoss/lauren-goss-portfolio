@@ -25,6 +25,13 @@
     height: 150px;
 }
 
+.portfolio {
+    margin: -70px var(--margin-right) 0px 0px;
+    text-align: end;
+    font-size: 60px;
+    color: var(--accent-color);
+}
+
 /* Header */
 
 header {
@@ -50,8 +57,10 @@ header h1 {
 }
 
 .nav-link {
-    margin: 0px 10px;
     color: var(--secondary-color);
+    text-decoration: underline;
+    margin: 10px 100px 0px 0px;
+    font-size: 30px;
 }
 
 /* About Me */
