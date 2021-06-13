@@ -1,6 +1,6 @@
 :root {
     --margin-left: 80px;
-    --margin-right: 20px;
+    --margin-right: 80px;
     --accent-color: rgb(39, 70, 126);
     --secondary-color: rgb(130, 184, 247);
     --header-footer: rgb(71, 69, 69);
@@ -17,7 +17,7 @@
     padding-right: 10px;
     color: var(--accent-color);
     font-size: 40px;
-    margin-right: var(--margin-right);
+    margin-right: 20px;
 }
 
 .main-picture {
@@ -50,10 +50,12 @@ header h1 {
     background-color: var(--accent-color);
     font-size: 50px;
     padding-right: 20px;
+    padding-left: 10px;
     background-image: linear-gradient(
         var(--accent-color) 0%,
         var(--secondary-color) 100%
     );
+    border-radius: 0px 10px 10px 0px;
 }
 
 .nav-link {
@@ -94,7 +96,10 @@ header h1 {
 
 #projects div a img {
     height: 500px;
-    width: 1150px;
+    width: 1090px;
+    border-style: solid;
+    border-color: var(--secondary-color);
+    border-width: 5px;
 }
 
 #projects div {
@@ -113,6 +118,33 @@ header h1 {
     margin: 0px 50px 0px 0px;
     width: 500px;
     height: 300px;
+    border-style: solid;
+    border-color: var(--secondary-color);
+    border-width: 5px;
+}
+
+.project-caption {
+    color: var(--accent-color);
+    font-size: 30px;
+    position: absolute;
+    bottom: 30px;
+    background-color: rgba(130, 184, 247, 0.9);
+    padding: 10px 10px 20px 20px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.project-caption ul li {
+    list-style: none;
+}
+
+.project-sub-caption {
+    font-size: 20px;
+}
+
+#projects div a,
+#projects div div figure {
+    text-decoration: none;
+    position: relative;
 }
 
 /* Contact Me */
