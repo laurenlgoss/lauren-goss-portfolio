@@ -26,6 +26,7 @@ footer {
     margin-right: 20px;
     min-width: 15rem;
     min-height: 100%;
+    text-align: end;
 }
 
 .main-picture {
@@ -112,6 +113,7 @@ header h1 {
     border-style: solid;
     border-color: var(--secondary-color);
     border-width: 5px;
+    transition: all 0.2s ease-in-out;
 }
 
 #projects div {
@@ -133,6 +135,7 @@ header h1 {
     border-color: var(--secondary-color);
     border-width: 5px;
     margin-top: var(--margin-top);
+    transition: all 0.2s ease-in-out;
 }
 
 .project-caption {
@@ -157,6 +160,12 @@ header h1 {
 #projects div div figure {
     text-decoration: none;
     position: relative;
+}
+
+#projects div a img:hover,
+#projects div div figure img:hover {
+    color: var(--accent-color);
+    box-shadow: 0 5px 15px rgba(130, 184, 247, 0.9);
 }
 
 /* Contact Me */
