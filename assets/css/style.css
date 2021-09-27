@@ -11,7 +11,7 @@ body {
 }
 
 .alt-font {
-    font-family: "Inconsolata";
+  font-family: "Inconsolata";
 }
 
 .nav-container .row {
@@ -35,7 +35,7 @@ body {
 }
 
 .github-icon {
-    margin-left: -0.5em;
+  margin-left: -0.5em;
 }
 
 .right-nav a {
@@ -85,6 +85,10 @@ body {
   width: 340px;
 }
 
+.intro h5 {
+  font-weight: 300;
+}
+
 .my-name {
   margin-bottom: 1em;
   font-size: 60px;
@@ -96,7 +100,7 @@ body {
 }
 
 #about-me {
-    margin-bottom: var(--vertical-margin);
+  margin-bottom: var(--vertical-margin);
 }
 
 #about-me .row .col-8 {
@@ -104,7 +108,7 @@ body {
 }
 
 .skills-card-header {
-    position: relative;
+  position: relative;
 }
 
 .skills-card {
@@ -134,11 +138,20 @@ body {
 }
 
 .frontend-icon {
-    left: 20px;
-    top: 20px;
+  left: 20px;
+  top: 20px;
 }
 
 .backend-icon {
-    left: 23px;
-    top: 20px;
+  left: 23px;
+  top: 20px;
+}
+
+.other-icon {
+  top: 20px;
+  left: 21px;
+}
+
+.skills-list i {
+  color: var(--right-header);
 }
