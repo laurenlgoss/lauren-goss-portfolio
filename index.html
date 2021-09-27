@@ -19,10 +19,28 @@
 <body>
     <header>
         <div class="nav-container">
-            <div class="row justify-content-end">
-                <div class="col-1 align-self-center"><a href="#about-me">about</a></div>
-                <div class="col-1 align-self-center"><a href="#">projects</a></div>
-                <div class="col-1 align-self-center"><a href="#">contact</a></div>
+            <div class="row">
+                <div class="col-3 left-header">
+                    <div class="row justify-content-start left-nav">
+                        <div class="col-2 align-self-end">
+                            <a href="https://www.linkedin.com/in/laurenlgoss/">
+                                <i class="fab fa-2x fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <div class="col-2 align-self-end">
+                            <a href="https://github.com/laurenlgoss">
+                                <i class="fab fa-2x fa-github github-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 right-header">
+                    <div class="row justify-content-end text-center right-nav">
+                        <div class="col-1 align-self-center"><a href="#about-me">about</a></div>
+                        <div class="col-1 align-self-center"><a href="#">projects</a></div>
+                        <div class="col-1 align-self-center"><a href="#">contact</a></div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -38,7 +56,7 @@
                             <div class="headshot-decoration"></div>
                         </div>
                         <div class="col-6 align-self-center" class="intro">
-                            <h5><span class="hello">Hello World!</span> My name is</h5>
+                            <h5><span class="alt-font"><i class="fas fa-quote-left"></i> Hello World <i class="fas fa-quote-right"></i></span>  my name is</h5>
                             <h1 class="my-name">Lauren Goss</h1>
                             <p>
                                 I am an aspiring iOS Software Developer, currently enrolled in the UNC Coding Boot Camp
@@ -53,36 +71,54 @@
             <div class="row">
                 <div class="col-8 offset-2">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quo mollitia earum quidem a
-                        quam similique asperiores, odio libero, autem debitis rem. Pariatur exercitationem suscipit
-                        itaque architecto eveniet dolores quas! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Esse inventore rerum hic repellendus odit officia ducimus ad, sequi vel tempore quas temporibus
-                        perspiciatis veritatis mollitia quod atque nostrum? Reprehenderit, aliquid.
+                        I currently reside in Hickory, NC. I graduated Summa Cum Laude from North Carolina State University, obtaining my Bachelor of Science in Animal Science in May 2020. After working in the veterinary field following graduation, I was ready for a career change and began teaching myself Swift in Summer of 2020. Shortly after, I discovered a passion for logic and enrolled in UNC's Coding Boot Camp, from which I will graduate November 2021. I have a particular enthusiasm for writing frontend and backend logic.
                     </p>
                 </div>
             </div>
-            <div class="row row-cols-3">
-                <div class="col">
+            <div class="row justify-content-around">
+                <div class="col-3">
                     <div class="card skills-card">
-                        <div class="skills-icon"></div>
-                        <h5>Frontend</h5>
+                        <div class="skills-card-header">
+                            <h5 class="alt-font">frontend</h5>
+                            <div class="skills-icon">
+                                <i class="fas fa-2x fa-desktop frontend-icon"></i>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Node.js</li>
+                            <li>jQuery</li>
+                            <li>HTML/CSS</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-3">
                     <div class="card skills-card">
-                        <div class="skills-icon"></div>
-                        <h5>Backend</h5>
+                        <div class="skills-card-header">
+                            <h5 class="alt-font">backend</h5>
+                            <div class="skills-icon">
+                                <i class="fas fa-2x fa-database backend-icon"></i>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Express.js</li>
+                            <li>VB.NET</li>
+                            <li>MySQL</li>
+                            <li>Handlebars</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-3">
                     <div class="card skills-card">
                         <div class="skills-icon"></div>
-                        <h5>Technologies</h5>
+                        <h5 class="alt-font">other</h5>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
+    <script src="https://kit.fontawesome.com/afaf8ab7a6.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,5 +1,4 @@
 :root {
-  --navbar: black;
   --left-header: #ffbf00;
   --right-header: #00abff;
   --vertical-margin: 4em;
@@ -7,26 +6,46 @@
 
 body {
   background-color: black;
-  font-family: 'Calibre-SemiBold', sans-serif;
+  font-family: "Calibre-SemiBold", sans-serif;
   color: white;
 }
 
-.nav-container {
-  height: 50px;
-  background-color: var(--navbar);
+.alt-font {
+    font-family: "Inconsolata";
 }
 
 .nav-container .row {
-  height: 100%;
+  height: 40px;
 }
 
-.nav-container a {
+.nav-container .left-header {
+  padding-left: 1.5em;
+}
+
+.nav-container .right-header {
+  padding-right: 1.5em;
+}
+
+.left-nav a {
+  color: white;
+}
+
+.left-nav a:hover {
+  color: var(--right-header);
+}
+
+.github-icon {
+    margin-left: -0.5em;
+}
+
+.right-nav a {
   text-decoration: none;
   color: white;
-  font-family: 'Inconsolata'
+  font-family: "Inconsolata";
+  font-size: 17px;
 }
 
-.nav-container a:hover {
+.right-nav a:hover {
   color: var(--left-header);
   border-bottom: 2px solid;
 }
@@ -72,35 +91,54 @@ body {
   font-weight: bold;
 }
 
-.hello {
-    font-family: 'Inconsolata';
-}
-
 .card {
   border-radius: 0px;
 }
 
-#about-me .row .col-8 {
+#about-me {
     margin-bottom: var(--vertical-margin);
 }
 
-.skills-card {
-    color: black;
-    padding-top: 3em;
+#about-me .row .col-8 {
+  margin-bottom: var(--vertical-margin);
+}
+
+.skills-card-header {
     position: relative;
 }
 
+.skills-card {
+  color: black;
+  padding-top: 3em;
+  height: 100%;
+}
+
 .skills-card h5 {
-    text-align: center;
-    font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
 
 .skills-icon {
-    position: absolute;
-    background-color: var(--right-header);
-    border-radius: 50%;
-    height: 75px;
-    width: 75px;
-    left: 190px;
-    bottom: 45px;
+  position: absolute;
+  background-color: var(--right-header);
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  left: 132px;
+  bottom: 45px;
+}
+
+.skills-icon i {
+  position: absolute;
+  color: white;
+}
+
+.frontend-icon {
+    left: 20px;
+    top: 20px;
+}
+
+.backend-icon {
+    left: 23px;
+    top: 20px;
 }
