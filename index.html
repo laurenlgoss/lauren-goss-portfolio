@@ -5,162 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Lauren Goss Portfolio</title>
 </head>
 
 <body>
     <header>
-        <h1>
-            Lauren Goss
-        </h1>
-        <a href="#about-me" class="nav-link" id="push-left">
-            About Me
-        </a>
-        <a href="#projects" class="nav-link">
-            Projects
-        </a>
-        <a href="#contact-me" class="nav-link">
-            Contact Me
-        </a>
+        <div class="nav-container">
+            <div class="row justify-content-end">
+                <div class="col-1 align-self-center"><a href="#about-me">About Me</a></div>
+                <div class="col-1 align-self-center"><a href="#">Projects</a></div>
+                <div class="col-1 align-self-center"><a href="#">Contact Me</a></div>
+            </div>
+        </div>
     </header>
 
-    <img src="assets/images/header.jpg" class="main-picture">
-
     <main>
-        <h1 class="portfolio">Portfolio</h1>
-        <!-- About Me -->
-        <section id="about-me">
-            <h1 class="section-title">
-                About Me
-            </h1>
-            <ul>
-                <li>
-                    Hello, my name is Lauren Goss. I am from Hickory, NC and currently reside here. I received my Bachelors of Science in Animal Science and graduated Summa Cum Laude from North Carolina State University in May 2020. My original goal was to go to veterinary school and obtain my DVM. After realizing that this was no longer my dream, I decided to teach myself to code.
-                </li>
-                <pre>
-
-                </pre>
-                <li>
-                    My career goal is to become an iOS app developer, so I began learning Swift in Summer of 2020. I soon realized that I have a true passion for programming and enrolled in the UNC Coding Boot Camp for Full-Stack Web Development. So far, I have learned HTML, CSS, JavaScript, jQuery, API calls, Node, MySQL, Express, MVC structure, and more.
-                </li>
-                <pre>
-
-                </pre>
-                <li>
-                    More than anything, I believe my background in veterinary medicine has helped me hone my ability to be precise which will aid me in my pursuit of app development. When I am not coding, I enjoy spending time with my family, running, riding horses, and playing with my two dachshunds.
-                </li>
-            </ul>
-            <figure>
-                <img src="./assets/images/Headshot.jpg" alt="Lauren Goss headshot">
-            </figure>
-        </section>
-        <!-- Projects -->
-        <section id="projects">
-            <h1 class="section-title">
-                Projects
-            </h1>
-            <div>
-                <a href="https://pamtheham.github.io/Sky-Gazer/">
-                    <img src="../Sky-Gazer/Assets/Sky-Gazer-screenshot.png" alt="Screenshot of Sky Gazer deployed page">
-                    <figcaption class="project-caption">
-                        <ul>
-                            <li>
-                                Sky Gazer
-                            </li>
-                            <li class="project-sub-caption">
-                                HTML, CSS, JavaScript
-                            </li>
-                        </ul>
-                    </figcaption>
-                </a>
-                <div>
-                    <figure>
-                        <a href="https://laurenlgoss.github.io/weather-dashboard/">
-                            <img src="../weather-dashboard/assets/images/weather-dashboard-screenshot.png" alt="Screenshot of Weather Dashboard deployed page">
-                            <figcaption class="project-caption">
-                                <ul>
-                                    <li>
-                                        Weather Dashboard
-                                    </li>
-                                    <li class="project-sub-caption">
-                                        HTML, CSS, JavaScript
-                                    </li>
-                                </ul>
-                            </figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="https://laurenlgoss.github.io/code-quiz/">
-                            <img src="../code-quiz/assets/images/code-quiz-question.png">
-                            <figcaption class="project-caption">
-                                <ul>
-                                    <li>
-                                        Code Quiz
-                                    </li>
-                                    <li class="project-sub-caption">
-                                        HTML, CSS, JavaScript
-                                    </li>
-                                </ul>
-                            </figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="https://via.placeholder.com/450">
-                            <figcaption class="project-caption">
-                                <ul>
-                                    <li>
-                                        Caption
-                                    </li>
-                                    <li class="project-sub-caption">
-                                        Programming language
-                                    </li>
-                                </ul>
-                            </figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="https://via.placeholder.com/450">
-                            <figcaption class="project-caption">
-                                <ul>
-                                    <li>
-                                        Caption
-                                    </li>
-                                    <li class="project-sub-caption">
-                                        Programming language
-                                    </li>
-                                </ul>
-                            </figcaption>
-                        </a>
-                    </figure>
+        <div class="header-container">
+            <div class="row">
+                <div class="col-3 left-header"></div>
+                <div class="col-9 right-header">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="assets/images/Headshot.jpg" class="headshot">
+                            <div class="headshot-decoration"></div>
+                        </div>
+                        <div class="col-6 align-self-center" class="intro">
+                            <h5>Hello, my name is</h5>
+                            <h1 class="my-name">Lauren Goss</h1>
+                            <p>
+                                I am an aspiring iOS Software Developer, currently enrolled in the UNC Coding Boot Camp
+                                for Full-Stack Web Development.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <div id="about-me">
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <div class="card">
+                        <div class="row text-center">
+                            <div class="col-2 offset-5">
+                                <div class="section-icon"></div>
+                                <h4>About Me</h4>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <h5 class="col-4">Education</h5>
+                            <h5 class="col-4">Background</h5>
+                            <h5 class="col-4">Languages/Technologies</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-
-    <footer id="contact-me">
-        <h1 class="section-title">
-            Contact Me
-        </h1>
-        <a class="contact">
-            (828)409-3012
-        </a>
-        <a class="contact">
-            laurenlgoss98@gmail.com
-        </a>
-        <a href="https://github.com/laurenlgoss" class="contact">
-            GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/laurenlgoss/" class="contact">
-            LinkedIn
-        </a>
-        <a href="../lauren-goss-portfolio/assets/images/Lauren Goss Resume.pdf" class="contact">
-            Resume
-        </a>
-    </footer>
 </body>
 
 </html>
