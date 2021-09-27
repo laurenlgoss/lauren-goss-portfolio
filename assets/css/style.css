@@ -2,11 +2,12 @@
   --navbar: black;
   --left-header: #ffbf00;
   --right-header: #00abff;
+  --vertical-margin: 4em;
 }
 
 body {
   background-color: black;
-  font-family: Calibre-SemiBold, sans-serif;
+  font-family: 'Calibre-SemiBold', sans-serif;
   color: white;
 }
 
@@ -22,6 +23,7 @@ body {
 .nav-container a {
   text-decoration: none;
   color: white;
+  font-family: 'Inconsolata'
 }
 
 .nav-container a:hover {
@@ -30,7 +32,7 @@ body {
 }
 
 .header-container {
-  margin-bottom: 5em;
+  margin-bottom: var(--vertical-margin);
 }
 
 .header-container .row {
@@ -56,7 +58,7 @@ body {
 
 .headshot-decoration {
   position: absolute;
-  border: 4px solid white;
+  border: 5px solid white;
   border-radius: 50%;
   height: 340px;
   left: -170px;
@@ -70,29 +72,35 @@ body {
   font-weight: bold;
 }
 
+.hello {
+    font-family: 'Inconsolata';
+}
+
 .card {
   border-radius: 0px;
 }
 
-#about-me {
-  color: black;
+#about-me .row .col-8 {
+    margin-bottom: var(--vertical-margin);
 }
 
-#about-me .card {
-  background-color: white;
-  padding-top: 4em;
+.skills-card {
+    color: black;
+    padding-top: 3em;
+    position: relative;
 }
 
-#about-me .col-2 {
-  position: relative;
+.skills-card h5 {
+    text-align: center;
+    font-weight: bold;
 }
 
-.section-icon {
-  position: absolute;
-  background-color: var(--right-header);
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  bottom: 50px;
-  left: 50px;
+.skills-icon {
+    position: absolute;
+    background-color: var(--right-header);
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    left: 190px;
+    bottom: 45px;
 }
