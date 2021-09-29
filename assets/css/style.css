@@ -2,6 +2,7 @@
   --left-header: #ffbf00;
   --right-header: #00abff;
   --vertical-margin: 4em;
+  --alt-font-color: #1d1d1d;
 }
 
 body {
@@ -36,6 +37,7 @@ body {
 
 .github-icon {
   margin-left: -0.5em;
+  padding: 0em .75em;
 }
 
 .right-nav a {
@@ -43,7 +45,7 @@ body {
   color: white;
   font-family: "Inconsolata";
   font-size: 17px;
-  padding: .25em;
+  padding: 0.25em;
 }
 
 .right-nav a:hover {
@@ -108,6 +110,15 @@ body {
   margin-bottom: var(--vertical-margin);
 }
 
+.section-title {
+  position: absolute;
+  left: 10px;
+  color: var(--alt-font-color);
+  font-weight: bold;
+  font-size: 200px;
+  bottom: -91px;
+}
+
 #about-me .row .col-8 {
   margin-bottom: var(--vertical-margin);
 }
@@ -170,7 +181,7 @@ body {
 }
 
 .project-title {
-  background-image: linear-gradient(60deg, var(--left-header), hotpink);
+  background-image: linear-gradient(60deg, hotpink, var(--left-header));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
