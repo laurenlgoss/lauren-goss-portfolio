@@ -119,6 +119,7 @@ body {
   color: transparent;  font-weight: bold;
   font-size: 200px;
   bottom: -91px;
+  z-index: -1;
 }
 
 #about-me .row .col-8 {
@@ -183,7 +184,7 @@ body {
 }
 
 .project-card {
-  background-color: black;
+  background-color: transparent;
   margin: 0em 1.5em;
 }
 
@@ -219,6 +220,16 @@ body {
 
 .featured-project {
   position: relative;
+  box-sizing: content-box;
+  border-width: 5px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #f13232, #a053df);
+  border-image-slice: 1;
+  padding: 1.5em;
+  margin: 1.5em 1.5em var(--vertical-margin) 1.5em;
+}
+
+.project-card {
   margin-bottom: var(--vertical-margin);
 }
 
