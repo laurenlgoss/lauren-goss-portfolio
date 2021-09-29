@@ -33,11 +33,11 @@ body {
 
 .left-nav a:hover {
   color: var(--right-header);
+  text-decoration: none;
 }
 
 .github-icon {
-  margin-left: -0.5em;
-  padding: 0em .75em;
+  margin-left: .25em;
 }
 
 .right-nav a {
@@ -113,8 +113,10 @@ body {
 .section-title {
   position: absolute;
   left: 10px;
-  color: var(--alt-font-color);
-  font-weight: bold;
+  background-image: linear-gradient(60deg, #272727, var(--alt-font-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;  font-weight: bold;
   font-size: 200px;
   bottom: -91px;
 }
@@ -180,13 +182,49 @@ body {
   display: none;
 }
 
+#projects .card {
+  background-color: black;
+  border-radius: 0px;
+}
+
+#projects .card-img-top {
+  border-radius: 0px;
+}
+
+.projects .fa-ul {
+  margin-left: 1.5em;
+}
+
 .project-title {
-  background-image: linear-gradient(60deg, hotpink, var(--left-header));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: white;
   font-weight: bold;
   font-size: 50px;
+}
+
+.featured-project {
+  position: relative;
+  margin-bottom: var(--vertical-margin);
+}
+
+.project-icons-container {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+.project-icons-container a {
+  padding: 0em .25em;
+  color: black;
+}
+
+.project-icons-container a:hover {
+  color: var(--right-header);
+  text-decoration: none;;
+}
+
+.project-img-container {
+  position: relative;
+  margin-bottom: 0.75em;
 }
 
 .copyright {
