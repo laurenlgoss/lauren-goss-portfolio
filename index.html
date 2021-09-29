@@ -38,9 +38,9 @@
                 <!-- Nav Links -->
                 <div class="col-9 right-header">
                     <div class="row justify-content-end text-center right-nav">
-                        <div class="col-1 align-self-center"><a href="#about-me">about</a></div>
-                        <div class="col-1 align-self-center"><a href="#projects">projects</a></div>
-                        <div class="col-1 align-self-center"><a href="#">contact</a></div>
+                        <div class="col-1 align-self-center"><a href="#" id="about-me-nav">about</a></div>
+                        <div class="col-1 align-self-center"><a href="#" id="projects-nav">projects</a></div>
+                        <div class="col-1 align-self-center"><a href="#" id="contact-nav">contact</a></div>
                     </div>
                 </div>
             </div>
@@ -106,10 +106,11 @@
                 <div class="col-3">
                     <!-- Backend -->
                     <div class="card skills-card">
-                            <div class="skills-card-header text-center mx-auto">
-                                <div class="skills-icon backend-push"><i class="fas fa-2x fa-database backend-icon"></i></div>
-                                <h5 class="alt-font">backend</h5>
+                        <div class="skills-card-header text-center mx-auto">
+                            <div class="skills-icon backend-push"><i class="fas fa-2x fa-database backend-icon"></i>
                             </div>
+                            <h5 class="alt-font">backend</h5>
+                        </div>
                         <ul class="fa-ul mx-auto skills-list">
                             <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Express.js</li>
                             <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>VB.NET</li>
@@ -126,11 +127,9 @@
                             <h5 class="alt-font">other</h5>
                         </div>
                         <ul class="fa-ul mx-auto skills-list">
-                            <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Unit testing
-                            </li>
+                            <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Unit testing</li>
                             <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>MVC</li>
-                            <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Visual Studio
-                                Code</li>
+                            <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Visual Studio Code</li>
                             <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Wireframing</li>
                         </ul>
                     </div>
@@ -138,23 +137,32 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-10 offset-1 text-center">
-                <h2 class="section-title">Projects</h2>
-                <div class="section-title-decoration"></div>
-            </div>
-        </div>
+        <!-- <div class="row"> -->
+        <!-- <div class="col-10 offset-1 text-center"> -->
+        <!-- <h2 class="section-title">Projects</h2> -->
+        <!-- <div class="section-title-decoration"></div> -->
+        <!-- </div> -->
+        <!-- </div> -->
 
         <div id="projects">
             <div class="row justify-content-around">
                 <div class="col-5">
-                    <h4 class="mx-auto alt-font project-title">AppliTrak</h4>
+                    <h4 class="project-title">AppliTrak</h4>
                     <p>
                         Full-stack application that allows the user to keep track of all the jobs they are applying for
                         in one convenient location.
                     </p>
+                    <ul class="fa-ul mx-auto skills-list">
+                        <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>JavaScript</li>
+                        <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Express.js</li>
+                        <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>MySQL</li>
+                        <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Handlebars</li>
+                    </ul>
                 </div>
                 <div class="col-5">
+                    <a href="#"">
+                        <img class=" img-fluid" src="./assets/images/applitrak-dashboard.png">
+                    </a>
                 </div>
             </div>
         </div>
@@ -162,13 +170,14 @@
 
     <footer>
         <div class="row">
-            <div class="col-2 offset-5 text-center">
+            <div class="col text-center copyright">
                 <p>© Lauren Goss 2021</p>
             </div>
         </div>
     </footer>
 
     <script src="https://kit.fontawesome.com/afaf8ab7a6.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
