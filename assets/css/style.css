@@ -182,9 +182,25 @@ body {
   display: none;
 }
 
-#projects .card {
+.project-card {
   background-color: black;
+  margin: 0em 1.5em;
+}
+
+.royg-border {
+  border-image-source: linear-gradient(to left, lime, var(--left-header));
   border-radius: 0px;
+  border-image-slice: 1;
+  border-width: 5px;
+  padding: 3em;
+}
+
+.biv-border {
+  border-image-source: linear-gradient(to left, hotpink, var(--right-header));
+  border-radius: 0px;
+  border-image-slice: 1;
+  border-width: 5px;
+  padding: 3em;
 }
 
 #projects .card-img-top {
