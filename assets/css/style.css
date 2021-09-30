@@ -174,12 +174,11 @@ body {
   left: 21px;
 }
 
-.skills-list i {
+.custom-list i {
   color: var(--right-header);
 }
 
 #projects {
-  margin-bottom: var(--vertical-margin);
   display: none;
 }
 
@@ -209,7 +208,7 @@ body {
 }
 
 .projects .fa-ul {
-  margin-left: 1.5em;
+  margin: 0em 0em 0em 1.5em;
 }
 
 .project-title {
@@ -233,6 +232,16 @@ body {
   margin-bottom: var(--vertical-margin);
 }
 
+.project-card .text-left li {
+  display: inline;
+  margin-right: 2em;
+}
+
+.project-card .text-right li {
+  display: inline;
+  margin-left: 2em;
+}
+
 .project-icons-container {
   position: absolute;
   bottom: 5px;
@@ -242,6 +251,10 @@ body {
 .project-icons-container a {
   padding: 0em .25em;
   color: black;
+}
+
+.project-icons-container .light {
+  color: white;
 }
 
 .project-icons-container a:hover {
