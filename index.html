@@ -5,162 +5,315 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Lauren Goss Portfolio</title>
 </head>
 
 <body>
     <header>
-        <h1>
-            Lauren Goss
-        </h1>
-        <a href="#about-me" class="nav-link" id="push-left">
-            About Me
-        </a>
-        <a href="#projects" class="nav-link">
-            Projects
-        </a>
-        <a href="#contact-me" class="nav-link">
-            Contact Me
-        </a>
-    </header>
+        <!-- Navbar -->
+        <div class="nav-container">
+            <div class="row">
+                <div class="col-3 left-header">
+                    <!-- Icons -->
+                    <div class="row left-nav">
+                        <div class="col align-self-end">
+                            <a href="https://www.linkedin.com/in/laurenlgoss/" target="_blank">
+                                <i class="fab fa-2x fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/laurenlgoss" target="_blank" class="github-icon">
+                                <i class="fab fa-2x fa-github"></i>
+                            </a>
+                        </div>
 
-    <img src="assets/images/header.jpg" class="main-picture">
-
-    <main>
-        <h1 class="portfolio">Portfolio</h1>
-        <!-- About Me -->
-        <section id="about-me">
-            <h1 class="section-title">
-                About Me
-            </h1>
-            <ul>
-                <li>
-                    Hello, my name is Lauren Goss. I am from Hickory, NC and currently reside here. I received my Bachelors of Science in Animal Science and graduated Summa Cum Laude from North Carolina State University in May 2020. My original goal was to go to veterinary school and obtain my DVM. After realizing that this was no longer my dream, I decided to teach myself to code.
-                </li>
-                <pre>
-
-                </pre>
-                <li>
-                    My career goal is to become an iOS app developer, so I began learning Swift in Summer of 2020. I soon realized that I have a true passion for programming and enrolled in the UNC Coding Boot Camp for Full-Stack Web Development. So far, I have learned HTML, CSS, JavaScript, jQuery, API calls, Node, MySQL, Express, MVC structure, and more.
-                </li>
-                <pre>
-
-                </pre>
-                <li>
-                    More than anything, I believe my background in veterinary medicine has helped me hone my ability to be precise which will aid me in my pursuit of app development. When I am not coding, I enjoy spending time with my family, running, riding horses, and playing with my two dachshunds.
-                </li>
-            </ul>
-            <figure>
-                <img src="./assets/images/Headshot.jpg" alt="Lauren Goss headshot">
-            </figure>
-        </section>
-        <!-- Projects -->
-        <section id="projects">
-            <h1 class="section-title">
-                Projects
-            </h1>
-            <div>
-                <a href="https://pamtheham.github.io/Sky-Gazer/">
-                    <img src="../Sky-Gazer/Assets/Sky-Gazer-screenshot.png" alt="Screenshot of Sky Gazer deployed page">
-                    <figcaption class="project-caption">
-                        <ul>
-                            <li>
-                                Sky Gazer
-                            </li>
-                            <li class="project-sub-caption">
-                                HTML, CSS, JavaScript
-                            </li>
-                        </ul>
-                    </figcaption>
-                </a>
-                <div>
-                    <figure>
-                        <a href="https://laurenlgoss.github.io/weather-dashboard/">
-                            <img src="../weather-dashboard/assets/images/weather-dashboard-screenshot.png" alt="Screenshot of Weather Dashboard deployed page">
-                            <figcaption class="project-caption">
-                                <ul>
-                                    <li>
-                                        Weather Dashboard
-                                    </li>
-                                    <li class="project-sub-caption">
-                                        HTML, CSS, JavaScript
-                                    </li>
-                                </ul>
-                            </figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="https://laurenlgoss.github.io/code-quiz/">
-                            <img src="../code-quiz/assets/images/code-quiz-question.png">
-                            <figcaption class="project-caption">
-                                <ul>
-                                    <li>
-                                        Code Quiz
-                                    </li>
-                                    <li class="project-sub-caption">
-                                        HTML, CSS, JavaScript
-                                    </li>
-                                </ul>
-                            </figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="https://via.placeholder.com/450">
-                            <figcaption class="project-caption">
-                                <ul>
-                                    <li>
-                                        Caption
-                                    </li>
-                                    <li class="project-sub-caption">
-                                        Programming language
-                                    </li>
-                                </ul>
-                            </figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="https://via.placeholder.com/450">
-                            <figcaption class="project-caption">
-                                <ul>
-                                    <li>
-                                        Caption
-                                    </li>
-                                    <li class="project-sub-caption">
-                                        Programming language
-                                    </li>
-                                </ul>
-                            </figcaption>
-                        </a>
-                    </figure>
+                    </div>
+                </div>
+                <!-- Nav Links -->
+                <div class="col-9 right-header">
+                    <div class="row text-right right-nav">
+                        <div class="col align-self-center">
+                            <a href="#about-me" id="about-me-nav">.about()</a>
+                            <a href="#projects" id="projects-nav">.projects()</a>
+                            <a href="#contact" id="contact-nav">.contact()</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </header>
+
+    <main>
+        <div class="header-container">
+            <div class="row">
+                <div class="col-3 left-header"></div>
+                <!-- Introduction -->
+                <div class="col-9 right-header">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="assets/images/Headshot.jpg" class="headshot">
+                            <div class="headshot-decoration"></div>
+                        </div>
+                        <div class="col-6 align-self-center intro">
+                            <h5><span class="alt-font hello"><i class="fas fa-quote-left"></i> Hello world <i
+                                        class="fas fa-quote-right"></i></span> my name is</h5>
+                            <h1 class="my-name">Lauren Goss</h1>
+                            <p>
+                                I am an aspiring iOS Software Developer, currently enrolled in the UNC Coding Boot Camp
+                                for Full-Stack Web Development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about-me">
+            <div class="row" style="position: relative;">
+                <h1 class="section-title" id="about-me-title">about</h1>
+                <!-- About Me -->
+                <div class="col-8 offset-2">
+                    <p>
+                        I am presently residing in Hickory, NC. I graduated Summa Cum Laude from North Carolina State
+                        University in May 2020, obtaining my Bachelor of Science in Animal Science. After working in the
+                        veterinary field following graduation, I was ready for a career change and began teaching myself
+                        Swift in Summer of 2020. Shortly after, I discovered a passion for logic and enrolled in UNC's
+                        Coding Boot Camp, from which I will graduate in November 2021. I have a particular enthusiasm
+                        for writing frontend and backend logic.
+                    </p>
+                </div>
+            </div>
+            <!-- Skills -->
+            <div class="row justify-content-between">
+                <div class="col-md-4">
+                    <!-- Frontend -->
+                    <div class="card skills-card">
+                        <div class="skills-card-header text-center mx-auto">
+                            <div class="skills-icon"><i class="fas fa-2x fa-desktop frontend-icon"></i></div>
+                            <h5 class="alt-font">frontend</h5>
+                        </div>
+                        <ul class="fa-ul mx-auto custom-list">
+                            <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>JavaScript</li>
+                            <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Node.js</li>
+                            <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>jQuery</li>
+                            <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>HTML/CSS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Backend -->
+                    <div class="card skills-card">
+                        <div class="skills-card-header text-center mx-auto">
+                            <div class="skills-icon backend-push"><i class="fas fa-2x fa-database backend-icon"></i>
+                            </div>
+                            <h5 class="alt-font">backend</h5>
+                        </div>
+                        <ul class="fa-ul mx-auto custom-list">
+                            <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Express.js</li>
+                            <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>ASP.NET/VB.NET</li>
+                            <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>MySQL</li>
+                            <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Handlebars</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Other -->
+                    <div class="card skills-card">
+                        <div class="skills-card-header text-center mx-auto">
+                            <div class="skills-icon other-push"><i class="fas fa-2x fa-tools other-icon"></i></div>
+                            <h5 class="alt-font">other</h5>
+                        </div>
+                        <ul class="fa-ul mx-auto custom-list">
+                            <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Unit testing
+                            </li>
+                            <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>MVC</li>
+                            <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Visual Studio
+                                Code</li>
+                            <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Wireframing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects">
+            <div class="row justify-content-between featured-project">
+                <h1 class="section-title" id="projects-title">projects</h1>
+                <div class="col-md-6 text-right">
+                    <h4 class="project-title">AppliTrak</h4>
+                    <p class="alt-font">
+                        // full-stack application that allows the user to keep track of all the jobs they are applying
+                        for in one convenient location.
+                    </p>
+                    <ul class="fa-ul text-left custom-list">
+                        <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>JavaScript</li>
+                        <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Express.js</li>
+                        <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>MySQL</li>
+                        <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Sequelize</li>
+                        <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Handlebars</li>
+                        <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Full Calendar.io
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <div class="feat-proj-img-container" style="position: relative;">
+                        <img class="img-fluid" src="./assets/images/applitrak-dashboard.png">
+                        <div class="project-icons-container">
+                            <a href="https://github.com/laurenlgoss/job-application-tracker" target="_blank">
+                                <i class="fab fa-3x fa-github"></i>
+                            </a>
+                            <a href="https://immense-eyrie-11789.herokuapp.com/" target="_blank">
+                                <i class="fas fa-3x fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-around projects">
+                <div class="col-md-6">
+                    <div class="card project-card royg-border" style="width: auto;">
+                        <div class="project-img-container">
+                            <img class="card-img-top" src="./assets/images/sky-gazer.png" alt="Card image cap">
+                            <div class="project-icons-container">
+                                <a href="https://github.com/laurenlgoss/Sky-Gazer" target="_blank">
+                                    <i class="fab fa-3x fa-github"></i>
+                                </a>
+                                <a href="https://pamtheham.github.io/Sky-Gazer/" target="_blank">
+                                    <i class="fas fa-3x fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <h4 class="project-title">Sky Gazer</h4>
+                            <p class="alt-font">
+                                // dashboard that uses the user's location and chosen satellite to determine the
+                                dates/times of that satellite's passovers for the next 7 days and their predicted
+                                visiblity.
+                            </p>
+                            <ul class="fa-ul text-right custom-list">
+                                <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>JavaScript
+                                </li>
+                                <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>API</li>
+                                <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Bulma</li>
+                                <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Local storage</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card project-card biv-border" style="width: auto;">
+                        <div class="project-img-container">
+                            <img class="card-img-top" src="./assets/images/employee-tracker.gif" alt="Card image cap">
+                            <div class="project-icons-container">
+                                <a href="https://github.com/laurenlgoss/employee-tracker" class="light" target="_blank">
+                                    <i class="fab fa-3x fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <h4 class="project-title">Employee Tracker</h4>
+                            <p class="alt-font">
+                                // backend JavaScript application that allows the user to interact with an employee
+                                database through the command line.
+                            </p>
+                            <ul class="fa-ul text-right custom-list">
+                                <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>JavaScript
+                                </li>
+                                <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Node.js</li>
+                                <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>MySQL</li>
+                                <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Inquirer.js
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card project-card biv-border" style="width: auto;">
+                        <div class="project-img-container">
+                            <img class="card-img-top" src="./assets/images/weather-dashboard.png" alt="Card image cap">
+                            <div class="project-icons-container">
+                                <a href="https://github.com/laurenlgoss/weather-dashboard" target="_blank">
+                                    <i class="fab fa-3x fa-github"></i>
+                                </a>
+                                <a href="https://laurenlgoss.github.io/weather-dashboard/" target="_blank">
+                                    <i class="fas fa-3x fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="project-title">Weather Dashboard</h4>
+                            <p class="alt-font">
+                                // weather dashboard that displays the current weather and 5-day forecast for whichever
+                                city user inputs.
+                            </p>
+                            <ul class="fa-ul text-left custom-list">
+                                <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>JavaScript
+                                </li>
+                                <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>API</li>
+                                <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Bootstrap
+                                </li>
+                                <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Local storage</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card project-card royg-border" style="width: auto;">
+                        <div class="project-img-container">
+                            <img class="card-img-top" src="./assets/images/code-quiz.png" alt="Card image cap">
+                            <div class="project-icons-container">
+                                <a href="https://github.com/laurenlgoss/code-quiz" target="_blank">
+                                    <i class="fab fa-3x fa-github"></i>
+                                </a>
+                                <a href="https://laurenlgoss.github.io/code-quiz/" target="_blank">
+                                    <i class="fas fa-3x fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="project-title">Code Quiz</h4>
+                            <p class="alt-font">
+                                // multiple choice quiz that tests the user on knowledge of HTML, CSS, and JavaScript concepts.
+                            </p>
+                            <ul class="fa-ul text-left custom-list">
+                                <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>JavaScript</li>
+                                <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Local storage</li>
+                                <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>HTML/CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="row" style="height: 0;">
+                <div class="col text-right">
+                    <h1 class="section-title" id="contact-title">contact</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <h5 class="alt-font">
+                        contactInfo = { email: laurenlgoss98@gmail.com, phone: 828-409-3012, resume: <a href="./assets/images/Lauren Goss Resume.pdf" target="_blank" class="resume-download">downloadHere</a> };
+                    </h5>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer id="contact-me">
-        <h1 class="section-title">
-            Contact Me
-        </h1>
-        <a class="contact">
-            (828)409-3012
-        </a>
-        <a class="contact">
-            laurenlgoss98@gmail.com
-        </a>
-        <a href="https://github.com/laurenlgoss" class="contact">
-            GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/laurenlgoss/" class="contact">
-            LinkedIn
-        </a>
-        <a href="../lauren-goss-portfolio/assets/images/Lauren Goss Resume.pdf" class="contact">
-            Resume
-        </a>
+    <footer>
+        <div class="row">
+            <div class="col text-center copyright">
+                <p>© Lauren Goss 2021</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://kit.fontawesome.com/afaf8ab7a6.js" crossorigin="anonymous"></script>
+    <!-- <script src="./assets/js/script.js"></script> -->
 </body>
 
 </html>
