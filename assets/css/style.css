@@ -106,20 +106,19 @@ body {
   border-radius: 0px;
 }
 
-#about-me {
-  margin-bottom: var(--vertical-margin);
-}
-
 .section-title {
   position: absolute;
-  left: 10px;
   background-image: linear-gradient(60deg, #272727, var(--alt-font-color));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;  font-weight: bold;
   font-size: 200px;
-  bottom: -91px;
   z-index: -1;
+}
+
+#about-me-title {
+  left: 10px;
+  bottom: -91px;
 }
 
 #about-me .row .col-8 {
@@ -133,7 +132,8 @@ body {
 .skills-card {
   color: black;
   padding-top: 3em;
-  height: 100%;
+  height: fit-content;
+  margin: 0em 1.5em var(--vertical-margin) 1.5em;
 }
 
 .skills-card h5 {
@@ -179,7 +179,11 @@ body {
 }
 
 #projects {
-  display: none;
+  /* display: none; */
+}
+#projects-title {
+  left: -41px;
+  bottom: -117px;
 }
 
 .project-card {
@@ -225,7 +229,7 @@ body {
   border-image: linear-gradient(to right, #f13232, #a053df);
   border-image-slice: 1;
   padding: 1.5em;
-  margin: 1.5em 1.5em var(--vertical-margin) 1.5em;
+  margin: 0em 1.5em var(--vertical-margin) 1.5em;
 }
 
 .project-card {
@@ -265,6 +269,24 @@ body {
 .project-img-container {
   position: relative;
   margin-bottom: 0.75em;
+}
+
+#contact .col {
+  margin-bottom: var(--vertical-margin);
+}
+
+#contact-title {
+  right: 1%;
+  bottom: -89px;
+}
+
+.resume-download {
+  color: var(--right-header);
+}
+
+.resume-download:hover {
+  color: var(--left-header);
+  text-decoration: none;
 }
 
 .copyright {

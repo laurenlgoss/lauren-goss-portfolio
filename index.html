@@ -38,9 +38,9 @@
                 <div class="col-9 right-header">
                     <div class="row text-right right-nav">
                         <div class="col align-self-center">
-                            <a href="#" id="about-me-nav">.about()</a>
-                            <a href="#" id="projects-nav">.projects()</a>
-                            <a href="#" id="contact-nav">.contact()</a>
+                            <a href="#about-me" id="about-me-nav">.about()</a>
+                            <a href="#projects" id="projects-nav">.projects()</a>
+                            <a href="#contact" id="contact-nav">.contact()</a>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
 
         <div id="about-me">
             <div class="row" style="position: relative;">
-                <h1 class="section-title">about</h1>
+                <h1 class="section-title" id="about-me-title">about</h1>
                 <!-- About Me -->
                 <div class="col-8 offset-2">
                     <p>
@@ -89,8 +89,8 @@
                 </div>
             </div>
             <!-- Skills -->
-            <div class="row justify-content-around">
-                <div class="col-3">
+            <div class="row justify-content-between">
+                <div class="col-md-4">
                     <!-- Frontend -->
                     <div class="card skills-card">
                         <div class="skills-card-header text-center mx-auto">
@@ -105,7 +105,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-4">
                     <!-- Backend -->
                     <div class="card skills-card">
                         <div class="skills-card-header text-center mx-auto">
@@ -115,13 +115,13 @@
                         </div>
                         <ul class="fa-ul mx-auto custom-list">
                             <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Express.js</li>
-                            <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>VB.NET</li>
+                            <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>ASP.NET/VB.NET</li>
                             <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>MySQL</li>
                             <li class="alt-font"><span class="fa-li"><i class="fas fa-check"></i></span>Handlebars</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-4">
                     <!-- Other -->
                     <div class="card skills-card">
                         <div class="skills-card-header text-center mx-auto">
@@ -143,7 +143,7 @@
 
         <div id="projects">
             <div class="row justify-content-between featured-project">
-                <h1 class="section-title">projects</h1>
+                <h1 class="section-title" id="projects-title">projects</h1>
                 <div class="col-md-6 text-right">
                     <h4 class="project-title">AppliTrak</h4>
                     <p class="alt-font">
@@ -287,6 +287,20 @@
                 </div>
             </div>
         </div>
+
+        <div id="contact">
+            <div class="row" style="height: 0;">
+                <div class="col text-right">
+                    <h1 class="section-title" id="contact-title">contact</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <h5 class="alt-font">
+                        contactInfo = { email: laurenlgoss98@gmail.com, phone: 828-409-3012, resume: <a href="./assets/images/Lauren Goss Resume.pdf" target="_blank" class="resume-download">downloadHere</a> };
+                    </h5>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -299,7 +313,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/afaf8ab7a6.js" crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js"></script>
+    <!-- <script src="./assets/js/script.js"></script> -->
 </body>
 
 </html>
