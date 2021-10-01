@@ -15,6 +15,12 @@ body {
   font-family: "Inconsolata";
 }
 
+.card {
+  border-radius: 0px;
+}
+
+/* Navbar */
+
 .nav-container .row {
   height: 40px;
 }
@@ -52,6 +58,8 @@ body {
   color: var(--left-header);
   border-bottom: 2px solid;
 }
+
+/* Intro */
 
 .header-container {
   margin-bottom: var(--vertical-margin);
@@ -102,10 +110,6 @@ body {
   font-weight: bold;
 }
 
-.card {
-  border-radius: 0px;
-}
-
 .section-title {
   position: absolute;
   background-image: linear-gradient(60deg, #272727, var(--alt-font-color));
@@ -115,6 +119,8 @@ body {
   font-size: 200px;
   z-index: -1;
 }
+
+/* About Me */
 
 #about-me-title {
   left: 10px;
@@ -178,9 +184,12 @@ body {
   color: var(--right-header);
 }
 
-#projects {
+/* Projects */
+
+/* #projects { */
   /* display: none; */
-}
+/* } */
+
 #projects-title {
   left: -41px;
   bottom: -117px;
@@ -271,6 +280,8 @@ body {
   margin-bottom: 0.75em;
 }
 
+/* Contact */
+
 #contact .col {
   margin-bottom: var(--vertical-margin);
 }
@@ -288,6 +299,8 @@ body {
   color: var(--left-header);
   text-decoration: none;
 }
+
+/* Footer */
 
 .copyright {
   color: gray;

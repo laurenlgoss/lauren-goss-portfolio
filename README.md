@@ -1,21 +1,15 @@
 # lauren-goss-portfolio
 
-I created a portfolio to share some information about myself, showcase my deployed applications, and share my contact information.
+Portfolio to share some information about myself, showcase my deployed applications, and share my contact information.
 
-## Features
+## About Me
 
-* Navigation links in header.
+I am an aspiring iOS Software Developer, currently enrolled in the UNC Coding Boot Camp for Full-Stack Web Development.
 
-* 5 most recent projects, with the newest project in the largest top spot.
+I am presently residing in Hickory, NC. I graduated Summa Cum Laude from North Carolina State University in May 2020, obtaining my Bachelor of Science in Animal Science. After working in the veterinary field following graduation, I was ready for a career change and began teaching myself Swift in Summer of 2020. Shortly after, I discovered a passion for logic and enrolled in UNC's Coding Boot Camp, from which I will graduate in November 2021. I have a particular enthusiasm for writing frontend and backend logic.
 
-* Links within each project screenshot that take the user to the deployed application.
+My portfolio can be visited [here](https://laurenlgoss.github.io/lauren-goss-portfolio/). 🙂
 
-* Links to my contact information in footer.
+## Screenshot of Portfolio
 
-## Link to Application
-
-https://laurenlgoss.github.io/lauren-goss-portfolio/
-
-## Screenshot of Application
-
-![Portfolio Screenshot](./assets/images/portfolio-screenshot.png)
+![Portfolio Screenshot](./assets/images/lauren-goss-portfolio.png)
